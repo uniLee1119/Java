@@ -1,0 +1,14 @@
+package ch08;
+
+public class TV implements Controllable {
+	String who;
+	TV(String who){
+		this.who =who;
+	}
+	@Override
+	public void power(boolean onOff) {
+		if(onOff)
+			System.out.println(name+" TV전원를 켠다.");
+		else System.out.println(name +" TV전원를 끈다.");
+	}
+}
