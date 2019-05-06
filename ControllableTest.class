@@ -1,0 +1,26 @@
+package ch08;
+
+public class ControllableTest {
+
+	public static void main(String[] args) {
+		String who="¿¿";
+		
+		class TV implements Controllable {
+			public void power(boolean onOff) {
+				if(onOff)
+					System.out.println(who+
+							" TV¿¿¿ ¿¿.");
+				else System.out.println(who+
+							" TV¿¿¿ ¿¿.");
+
+			}
+	}
+
+	Controllable tv = new TV();
+
+	tv.power(true);
+	tv.power(false);
+	tv.repair();
+	Controllable.reset();
+	}
+
