@@ -1,25 +1,16 @@
 package ch08;
 
 public class ControllableTest {
-
 	public static void main(String[] args) {
 		String who="I";
-		
-		class TV implements Controllable {
-			public void power(boolean onOff) {
-				if(onOff)
-					System.out.println(who+
-							" turn on TV.");
-				else System.out.println(who+
-							" turn off TV");
-
-			}
-	}
-
-
-	tv.power(true);
-	tv.power(false);
+		Controllable tv = (x,y) -> {
+			if(y)
+				System.out.println(who+"turn on"+ x);
+			else System.out.println(who+"turn off"+ x);
+		};
+	tv.power("Radio", true);
+	tv.power("Radio",false);
 	tv.repair();
 	Controllable.reset();
 	}
-
+}

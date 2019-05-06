@@ -1,0 +1,11 @@
+package ch08;
+
+public interface Controllable {
+	default void repair() {
+		System.out.println("The service center needs to repair it.");
+	}
+	static void reset() {
+		System.out.println("I can initialize it.");
+	}
+	void power(String name, boolean onOff);
+}
