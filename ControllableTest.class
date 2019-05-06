@@ -16,7 +16,6 @@ public class ControllableTest {
 			}
 	}
 
-	Controllable tv = new TV();
 
 	tv.power(true);
 	tv.power(false);
