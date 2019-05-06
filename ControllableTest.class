@@ -3,15 +3,15 @@ package ch08;
 public class ControllableTest {
 
 	public static void main(String[] args) {
-		String who="¿¿";
+		String who="I";
 		
 		class TV implements Controllable {
 			public void power(boolean onOff) {
 				if(onOff)
 					System.out.println(who+
-							" TV¿¿¿ ¿¿.");
+							" turn on TV.");
 				else System.out.println(who+
-							" TV¿¿¿ ¿¿.");
+							" turn off TV");
 
 			}
 	}
